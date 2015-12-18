@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD3505DF1C20166D001366BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3505DE1C20166D001366BA /* main.m */; };
+		BD3505E21C20166D001366BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3505E11C20166D001366BA /* AppDelegate.m */; };
+		BD3505E81C20166D001366BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3505E61C20166D001366BA /* Main.storyboard */; };
+		BD3505EA1C20166D001366BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3505E91C20166D001366BA /* Assets.xcassets */; };
+		BD3505ED1C20166D001366BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3505EB1C20166D001366BA /* LaunchScreen.storyboard */; };
+		BD3505F81C2016F8001366BA /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3505F71C2016F8001366BA /* Firebase.framework */; };
+		BD3505FA1C201753001366BA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3505F91C201753001366BA /* CFNetwork.framework */; };
+		BD3505FC1C201759001366BA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3505FB1C201759001366BA /* Security.framework */; };
+		BD3505FE1C201760001366BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3505FD1C201760001366BA /* SystemConfiguration.framework */; };
+		BD3506001C20176E001366BA /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3505FF1C20176E001366BA /* libicucore.tbd */; };
+		BD35061D1C201C99001366BA /* AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3506101C201C99001366BA /* AccessToken.m */; };
+		BD35061E1C201C99001366BA /* FirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3506121C201C99001366BA /* FirebaseManager.m */; };
+		BD35061F1C201C99001366BA /* NestAuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3506141C201C99001366BA /* NestAuthManager.m */; };
+		BD3506201C201C99001366BA /* NestStructureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3506161C201C99001366BA /* NestStructureManager.m */; };
+		BD3506211C201C99001366BA /* NestThermostatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3506181C201C99001366BA /* NestThermostatManager.m */; };
+		BD3506221C201C99001366BA /* NestWebViewAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD35061A1C201C99001366BA /* NestWebViewAuthController.m */; };
+		BD3506231C201C99001366BA /* Thermostat.m in Sources */ = {isa = PBXBuildFile; fileRef = BD35061C1C201C99001366BA /* Thermostat.m */; };
+		BD3506271C202F56001366BA /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3506261C202F56001366BA /* UIColor+Custom.m */; };
+		BD37A0F21C2048CC00CE21EB /* CHIConnectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD37A0F11C2048CC00CE21EB /* CHIConnectVC.m */; };
+		BD37A0F51C206CF400CE21EB /* CHIDashboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD37A0F41C206CF400CE21EB /* CHIDashboardVC.m */; };
+		BD37A0FE1C2174A100CE21EB /* CHIControlsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD37A0FD1C2174A100CE21EB /* CHIControlsTVC.m */; };
+		BD37A1011C2177E000CE21EB /* CHIControllsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD37A1001C2177E000CE21EB /* CHIControllsCell.m */; };
+		BD78AE3A1C21BE1900F391A5 /* CHINestDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE391C21BE1900F391A5 /* CHINestDevice.m */; };
+		BD78AE3E1C21CD3400F391A5 /* CHIDeviceThermostat.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE3D1C21CD3400F391A5 /* CHIDeviceThermostat.m */; };
+		BD78AE411C21CD5900F391A5 /* CHIDeviceCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE401C21CD5900F391A5 /* CHIDeviceCamera.m */; };
+		BD78AE471C21CD7F00F391A5 /* CHIDeviceSmoke.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE461C21CD7F00F391A5 /* CHIDeviceSmoke.m */; };
+		BD78AE4A1C21E05C00F391A5 /* CHIThermostatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE491C21E05C00F391A5 /* CHIThermostatCell.m */; };
+		BD78AE4D1C22F66500F391A5 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE4C1C22F66500F391A5 /* Camera.m */; };
+		BD78AE501C22F75F00F391A5 /* NestCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE4F1C22F75F00F391A5 /* NestCameraManager.m */; };
+		BD78AE531C22F79600F391A5 /* NestDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE521C22F79600F391A5 /* NestDeviceManager.m */; };
+		BD78AE561C22FE0A00F391A5 /* CHICameraCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE551C22FE0A00F391A5 /* CHICameraCell.m */; };
+		BD78AE591C23051D00F391A5 /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE581C23051D00F391A5 /* Smoke.m */; };
+		BD78AE5C1C23053500F391A5 /* NestSmokeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE5B1C23053500F391A5 /* NestSmokeManager.m */; };
+		BD78AE5F1C23077300F391A5 /* CHISmokeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78AE5E1C23077300F391A5 /* CHISmokeCell.m */; };
+		BDCEA5FA1C21A0F500DD23BF /* CHIDevicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCEA5F91C21A0F500DD23BF /* CHIDevicesManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD3505DA1C20166D001366BA /* NestApiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestApiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3505DE1C20166D001366BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD3505E01C20166D001366BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD3505E11C20166D001366BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD3505E71C20166D001366BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD3505E91C20166D001366BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD3505EC1C20166D001366BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD3505EE1C20166D001366BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD3505F71C2016F8001366BA /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		BD3505F91C201753001366BA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BD3505FB1C201759001366BA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BD3505FD1C201760001366BA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BD3505FF1C20176E001366BA /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		BD35060F1C201C99001366BA /* AccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessToken.h; sourceTree = "<group>"; };
+		BD3506101C201C99001366BA /* AccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessToken.m; sourceTree = "<group>"; };
+		BD3506111C201C99001366BA /* FirebaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirebaseManager.h; sourceTree = "<group>"; };
+		BD3506121C201C99001366BA /* FirebaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirebaseManager.m; sourceTree = "<group>"; };
+		BD3506131C201C99001366BA /* NestAuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestAuthManager.h; sourceTree = "<group>"; };
+		BD3506141C201C99001366BA /* NestAuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestAuthManager.m; sourceTree = "<group>"; };
+		BD3506151C201C99001366BA /* NestStructureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestStructureManager.h; sourceTree = "<group>"; };
+		BD3506161C201C99001366BA /* NestStructureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestStructureManager.m; sourceTree = "<group>"; };
+		BD3506171C201C99001366BA /* NestThermostatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestThermostatManager.h; sourceTree = "<group>"; };
+		BD3506181C201C99001366BA /* NestThermostatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestThermostatManager.m; sourceTree = "<group>"; };
+		BD3506191C201C99001366BA /* NestWebViewAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestWebViewAuthController.h; sourceTree = "<group>"; };
+		BD35061A1C201C99001366BA /* NestWebViewAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestWebViewAuthController.m; sourceTree = "<group>"; };
+		BD35061B1C201C99001366BA /* Thermostat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thermostat.h; sourceTree = "<group>"; };
+		BD35061C1C201C99001366BA /* Thermostat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thermostat.m; sourceTree = "<group>"; };
+		BD3506241C201CD1001366BA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		BD3506251C202F56001366BA /* UIColor+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Custom.h"; sourceTree = "<group>"; };
+		BD3506261C202F56001366BA /* UIColor+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Custom.m"; sourceTree = "<group>"; };
+		BD3506281C20304A001366BA /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		BD37A0F01C2048CC00CE21EB /* CHIConnectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHIConnectVC.h; sourceTree = "<group>"; };
+		BD37A0F11C2048CC00CE21EB /* CHIConnectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHIConnectVC.m; sourceTree = "<group>"; };
+		BD37A0F31C206CF400CE21EB /* CHIDashboardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHIDashboardVC.h; path = NestApiTest/ViewsAndControllers/Dashboard/CHIDashboardVC.h; sourceTree = SOURCE_ROOT; };
+		BD37A0F41C206CF400CE21EB /* CHIDashboardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHIDashboardVC.m; path = NestApiTest/ViewsAndControllers/Dashboard/CHIDashboardVC.m; sourceTree = SOURCE_ROOT; };
+		BD37A0FC1C2174A100CE21EB /* CHIControlsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHIControlsTVC.h; sourceTree = "<group>"; };
+		BD37A0FD1C2174A100CE21EB /* CHIControlsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHIControlsTVC.m; sourceTree = "<group>"; };
+		BD37A0FF1C2177E000CE21EB /* CHIControllsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHIControllsCell.h; sourceTree = "<group>"; };
+		BD37A1001C2177E000CE21EB /* CHIControllsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHIControllsCell.m; sourceTree = "<group>"; };
+		BD78AE381C21BE1900F391A5 /* CHINestDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHINestDevice.h; path = NestApiTest/Model/CHINestDevice.h; sourceTree = SOURCE_ROOT; };
+		BD78AE391C21BE1900F391A5 /* CHINestDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHINestDevice.m; path = NestApiTest/Model/CHINestDevice.m; sourceTree = SOURCE_ROOT; };
+		BD78AE3C1C21CD3400F391A5 /* CHIDeviceThermostat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHIDeviceThermostat.h; path = NestApiTest/Model/CHIDeviceThermostat.h; sourceTree = SOURCE_ROOT; };
+		BD78AE3D1C21CD3400F391A5 /* CHIDeviceThermostat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHIDeviceThermostat.m; path = NestApiTest/Model/CHIDeviceThermostat.m; sourceTree = SOURCE_ROOT; };
+		BD78AE3F1C21CD5900F391A5 /* CHIDeviceCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHIDeviceCamera.h; path = NestApiTest/Model/CHIDeviceCamera.h; sourceTree = SOURCE_ROOT; };
+		BD78AE401C21CD5900F391A5 /* CHIDeviceCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHIDeviceCamera.m; path = NestApiTest/Model/CHIDeviceCamera.m; sourceTree = SOURCE_ROOT; };
+		BD78AE451C21CD7F00F391A5 /* CHIDeviceSmoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHIDeviceSmoke.h; path = NestApiTest/Model/CHIDeviceSmoke.h; sourceTree = SOURCE_ROOT; };
+		BD78AE461C21CD7F00F391A5 /* CHIDeviceSmoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHIDeviceSmoke.m; path = NestApiTest/Model/CHIDeviceSmoke.m; sourceTree = SOURCE_ROOT; };
+		BD78AE481C21E05C00F391A5 /* CHIThermostatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHIThermostatCell.h; sourceTree = "<group>"; };
+		BD78AE491C21E05C00F391A5 /* CHIThermostatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHIThermostatCell.m; sourceTree = "<group>"; };
+		BD78AE4B1C22F66500F391A5 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = NestApiTest/Model/NestSDK/Camera.h; sourceTree = SOURCE_ROOT; };
+		BD78AE4C1C22F66500F391A5 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Camera.m; path = NestApiTest/Model/NestSDK/Camera.m; sourceTree = SOURCE_ROOT; };
+		BD78AE4E1C22F75F00F391A5 /* NestCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NestCameraManager.h; path = NestApiTest/Model/NestSDK/NestCameraManager.h; sourceTree = SOURCE_ROOT; };
+		BD78AE4F1C22F75F00F391A5 /* NestCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NestCameraManager.m; path = NestApiTest/Model/NestSDK/NestCameraManager.m; sourceTree = SOURCE_ROOT; };
+		BD78AE511C22F79600F391A5 /* NestDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NestDeviceManager.h; path = NestApiTest/Model/NestSDK/NestDeviceManager.h; sourceTree = SOURCE_ROOT; };
+		BD78AE521C22F79600F391A5 /* NestDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NestDeviceManager.m; path = NestApiTest/Model/NestSDK/NestDeviceManager.m; sourceTree = SOURCE_ROOT; };
+		BD78AE541C22FE0A00F391A5 /* CHICameraCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHICameraCell.h; sourceTree = "<group>"; };
+		BD78AE551C22FE0A00F391A5 /* CHICameraCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHICameraCell.m; sourceTree = "<group>"; };
+		BD78AE571C23051C00F391A5 /* Smoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Smoke.h; path = NestApiTest/Model/NestSDK/Smoke.h; sourceTree = SOURCE_ROOT; };
+		BD78AE581C23051D00F391A5 /* Smoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Smoke.m; path = NestApiTest/Model/NestSDK/Smoke.m; sourceTree = SOURCE_ROOT; };
+		BD78AE5A1C23053500F391A5 /* NestSmokeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NestSmokeManager.h; path = NestApiTest/Model/NestSDK/NestSmokeManager.h; sourceTree = SOURCE_ROOT; };
+		BD78AE5B1C23053500F391A5 /* NestSmokeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NestSmokeManager.m; path = NestApiTest/Model/NestSDK/NestSmokeManager.m; sourceTree = SOURCE_ROOT; };
+		BD78AE5D1C23077300F391A5 /* CHISmokeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHISmokeCell.h; sourceTree = "<group>"; };
+		BD78AE5E1C23077300F391A5 /* CHISmokeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHISmokeCell.m; sourceTree = "<group>"; };
+		BDCEA5F81C21A0F500DD23BF /* CHIDevicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHIDevicesManager.h; path = NestApiTest/Model/CHIDevicesManager.h; sourceTree = SOURCE_ROOT; };
+		BDCEA5F91C21A0F500DD23BF /* CHIDevicesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHIDevicesManager.m; path = NestApiTest/Model/CHIDevicesManager.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD3505D71C20166D001366BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3506001C20176E001366BA /* libicucore.tbd in Frameworks */,
+				BD3505FE1C201760001366BA /* SystemConfiguration.framework in Frameworks */,
+				BD3505FC1C201759001366BA /* Security.framework in Frameworks */,
+				BD3505FA1C201753001366BA /* CFNetwork.framework in Frameworks */,
+				BD3505F81C2016F8001366BA /* Firebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD3505D11C20166D001366BA = {
+			isa = PBXGroup;
+			children = (
+				BD3505DC1C20166D001366BA /* NestApiTest */,
+				BD3505F61C2016DE001366BA /* Frameworks */,
+				BD3505DB1C20166D001366BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD3505DB1C20166D001366BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD3505DA1C20166D001366BA /* NestApiTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD3505DC1C20166D001366BA /* NestApiTest */ = {
+			isa = PBXGroup;
+			children = (
+				BD35060D1C201BC2001366BA /* Model */,
+				BD3506081C201BA2001366BA /* ViewsAndControllers */,
+				BD3505E01C20166D001366BA /* AppDelegate.h */,
+				BD3505E11C20166D001366BA /* AppDelegate.m */,
+				BD3505E61C20166D001366BA /* Main.storyboard */,
+				BD3505E91C20166D001366BA /* Assets.xcassets */,
+				BD3505EB1C20166D001366BA /* LaunchScreen.storyboard */,
+				BD3505EE1C20166D001366BA /* Info.plist */,
+				BD3505DD1C20166D001366BA /* Supporting Files */,
+			);
+			path = NestApiTest;
+			sourceTree = "<group>";
+		};
+		BD3505DD1C20166D001366BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD3505DE1C20166D001366BA /* main.m */,
+				BD3506241C201CD1001366BA /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD3505F61C2016DE001366BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD3505FF1C20176E001366BA /* libicucore.tbd */,
+				BD3505FD1C201760001366BA /* SystemConfiguration.framework */,
+				BD3505FB1C201759001366BA /* Security.framework */,
+				BD3505F91C201753001366BA /* CFNetwork.framework */,
+				BD3505F71C2016F8001366BA /* Firebase.framework */,
+			);
+			name = Frameworks;
+			path = ../../../../work/programs/CHI/NestApiTest/Frameworks;
+			sourceTree = "<group>";
+		};
+		BD3506081C201BA2001366BA /* ViewsAndControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD37A0F81C21747800CE21EB /* Controls */,
+				BD37A0EF1C2048B100CE21EB /* ConnectViewController */,
+				BD3506091C201BA2001366BA /* Dashboard */,
+			);
+			name = ViewsAndControllers;
+			path = ../../../../../work/programs/CHI/NestApiTest/NestApiTest/ViewsAndControllers;
+			sourceTree = "<group>";
+		};
+		BD3506091C201BA2001366BA /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				BD37A0F31C206CF400CE21EB /* CHIDashboardVC.h */,
+				BD37A0F41C206CF400CE21EB /* CHIDashboardVC.m */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		BD35060D1C201BC2001366BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD35060E1C201C99001366BA /* NestSDK */,
+				BD78AE3B1C21CD1600F391A5 /* Devices */,
+				BDCEA5F81C21A0F500DD23BF /* CHIDevicesManager.h */,
+				BDCEA5F91C21A0F500DD23BF /* CHIDevicesManager.m */,
+			);
+			name = Model;
+			path = ../../../../../work/programs/CHI/NestApiTest/NestApiTest/Model;
+			sourceTree = "<group>";
+		};
+		BD35060E1C201C99001366BA /* NestSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BD3506281C20304A001366BA /* Constants.h */,
+				BD3506251C202F56001366BA /* UIColor+Custom.h */,
+				BD3506261C202F56001366BA /* UIColor+Custom.m */,
+				BD35060F1C201C99001366BA /* AccessToken.h */,
+				BD3506101C201C99001366BA /* AccessToken.m */,
+				BD3506111C201C99001366BA /* FirebaseManager.h */,
+				BD3506121C201C99001366BA /* FirebaseManager.m */,
+				BD3506131C201C99001366BA /* NestAuthManager.h */,
+				BD3506141C201C99001366BA /* NestAuthManager.m */,
+				BD3506151C201C99001366BA /* NestStructureManager.h */,
+				BD3506161C201C99001366BA /* NestStructureManager.m */,
+				BD78AE511C22F79600F391A5 /* NestDeviceManager.h */,
+				BD78AE521C22F79600F391A5 /* NestDeviceManager.m */,
+				BD3506171C201C99001366BA /* NestThermostatManager.h */,
+				BD3506181C201C99001366BA /* NestThermostatManager.m */,
+				BD3506191C201C99001366BA /* NestWebViewAuthController.h */,
+				BD35061A1C201C99001366BA /* NestWebViewAuthController.m */,
+				BD35061B1C201C99001366BA /* Thermostat.h */,
+				BD35061C1C201C99001366BA /* Thermostat.m */,
+				BD78AE4E1C22F75F00F391A5 /* NestCameraManager.h */,
+				BD78AE4F1C22F75F00F391A5 /* NestCameraManager.m */,
+				BD78AE4B1C22F66500F391A5 /* Camera.h */,
+				BD78AE4C1C22F66500F391A5 /* Camera.m */,
+				BD78AE5A1C23053500F391A5 /* NestSmokeManager.h */,
+				BD78AE5B1C23053500F391A5 /* NestSmokeManager.m */,
+				BD78AE571C23051C00F391A5 /* Smoke.h */,
+				BD78AE581C23051D00F391A5 /* Smoke.m */,
+			);
+			path = NestSDK;
+			sourceTree = "<group>";
+		};
+		BD37A0EF1C2048B100CE21EB /* ConnectViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD37A0F01C2048CC00CE21EB /* CHIConnectVC.h */,
+				BD37A0F11C2048CC00CE21EB /* CHIConnectVC.m */,
+			);
+			name = ConnectViewController;
+			path = NestApiTest/ViewsAndControllers/ConnectViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		BD37A0F81C21747800CE21EB /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				BD37A0FC1C2174A100CE21EB /* CHIControlsTVC.h */,
+				BD37A0FD1C2174A100CE21EB /* CHIControlsTVC.m */,
+				BD37A0FF1C2177E000CE21EB /* CHIControllsCell.h */,
+				BD37A1001C2177E000CE21EB /* CHIControllsCell.m */,
+				BD78AE481C21E05C00F391A5 /* CHIThermostatCell.h */,
+				BD78AE491C21E05C00F391A5 /* CHIThermostatCell.m */,
+				BD78AE541C22FE0A00F391A5 /* CHICameraCell.h */,
+				BD78AE551C22FE0A00F391A5 /* CHICameraCell.m */,
+				BD78AE5D1C23077300F391A5 /* CHISmokeCell.h */,
+				BD78AE5E1C23077300F391A5 /* CHISmokeCell.m */,
+			);
+			name = Controls;
+			path = NestApiTest/ViewsAndControllers/Controls;
+			sourceTree = SOURCE_ROOT;
+		};
+		BD78AE3B1C21CD1600F391A5 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				BD78AE381C21BE1900F391A5 /* CHINestDevice.h */,
+				BD78AE391C21BE1900F391A5 /* CHINestDevice.m */,
+				BD78AE3C1C21CD3400F391A5 /* CHIDeviceThermostat.h */,
+				BD78AE3D1C21CD3400F391A5 /* CHIDeviceThermostat.m */,
+				BD78AE3F1C21CD5900F391A5 /* CHIDeviceCamera.h */,
+				BD78AE401C21CD5900F391A5 /* CHIDeviceCamera.m */,
+				BD78AE451C21CD7F00F391A5 /* CHIDeviceSmoke.h */,
+				BD78AE461C21CD7F00F391A5 /* CHIDeviceSmoke.m */,
+			);
+			name = Devices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD3505D91C20166D001366BA /* NestApiTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD3505F11C20166D001366BA /* Build configuration list for PBXNativeTarget "NestApiTest" */;
+			buildPhases = (
+				BD3505D61C20166D001366BA /* Sources */,
+				BD3505D71C20166D001366BA /* Frameworks */,
+				BD3505D81C20166D001366BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NestApiTest;
+			productName = NestApiTest;
+			productReference = BD3505DA1C20166D001366BA /* NestApiTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD3505D21C20166D001366BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Andrew Danileyko";
+				TargetAttributes = {
+					BD3505D91C20166D001366BA = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = BD3505D51C20166D001366BA /* Build configuration list for PBXProject "NestApiTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD3505D11C20166D001366BA;
+			productRefGroup = BD3505DB1C20166D001366BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD3505D91C20166D001366BA /* NestApiTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD3505D81C20166D001366BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3505ED1C20166D001366BA /* LaunchScreen.storyboard in Resources */,
+				BD3505EA1C20166D001366BA /* Assets.xcassets in Resources */,
+				BD3505E81C20166D001366BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD3505D61C20166D001366BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDCEA5FA1C21A0F500DD23BF /* CHIDevicesManager.m in Sources */,
+				BD78AE3E1C21CD3400F391A5 /* CHIDeviceThermostat.m in Sources */,
+				BD37A0F51C206CF400CE21EB /* CHIDashboardVC.m in Sources */,
+				BD3506201C201C99001366BA /* NestStructureManager.m in Sources */,
+				BD3506221C201C99001366BA /* NestWebViewAuthController.m in Sources */,
+				BD37A1011C2177E000CE21EB /* CHIControllsCell.m in Sources */,
+				BD78AE501C22F75F00F391A5 /* NestCameraManager.m in Sources */,
+				BD78AE4A1C21E05C00F391A5 /* CHIThermostatCell.m in Sources */,
+				BD78AE591C23051D00F391A5 /* Smoke.m in Sources */,
+				BD78AE4D1C22F66500F391A5 /* Camera.m in Sources */,
+				BD3506211C201C99001366BA /* NestThermostatManager.m in Sources */,
+				BD78AE5C1C23053500F391A5 /* NestSmokeManager.m in Sources */,
+				BD78AE411C21CD5900F391A5 /* CHIDeviceCamera.m in Sources */,
+				BD3506231C201C99001366BA /* Thermostat.m in Sources */,
+				BD3505E21C20166D001366BA /* AppDelegate.m in Sources */,
+				BD35061E1C201C99001366BA /* FirebaseManager.m in Sources */,
+				BD3506271C202F56001366BA /* UIColor+Custom.m in Sources */,
+				BD78AE561C22FE0A00F391A5 /* CHICameraCell.m in Sources */,
+				BD37A0F21C2048CC00CE21EB /* CHIConnectVC.m in Sources */,
+				BD78AE471C21CD7F00F391A5 /* CHIDeviceSmoke.m in Sources */,
+				BD35061F1C201C99001366BA /* NestAuthManager.m in Sources */,
+				BD3505DF1C20166D001366BA /* main.m in Sources */,
+				BD78AE5F1C23077300F391A5 /* CHISmokeCell.m in Sources */,
+				BD78AE3A1C21BE1900F391A5 /* CHINestDevice.m in Sources */,
+				BD78AE531C22F79600F391A5 /* NestDeviceManager.m in Sources */,
+				BD37A0FE1C2174A100CE21EB /* CHIControlsTVC.m in Sources */,
+				BD35061D1C201C99001366BA /* AccessToken.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD3505E61C20166D001366BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD3505E71C20166D001366BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD3505EB1C20166D001366BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD3505EC1C20166D001366BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD3505EF1C20166D001366BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BD3505F01C20166D001366BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD3505F21C20166D001366BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				INFOPLIST_FILE = NestApiTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = CHI.NestApiTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD3505F31C20166D001366BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				INFOPLIST_FILE = NestApiTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = CHI.NestApiTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD3505D51C20166D001366BA /* Build configuration list for PBXProject "NestApiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3505EF1C20166D001366BA /* Debug */,
+				BD3505F01C20166D001366BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD3505F11C20166D001366BA /* Build configuration list for PBXNativeTarget "NestApiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3505F21C20166D001366BA /* Debug */,
+				BD3505F31C20166D001366BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD3505D21C20166D001366BA /* Project object */;
+}
